@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(45deg, #ffd6f7, #ffa6c3);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s infinite alternate;
+            color: #333;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        .container {
+            background-color: rgba(255, 182, 193, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+            animation: fadeIn 1s ease-in-out;
+            background-image: url(); /* Add the path to your paper texture image */
+            background-size: cover;
+        }
+
+        .container:hover {
+            background-color: #ffd6f7; /* Lighter pink on hover */
+            transform: scale(1.05);
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #ff66a2; /* Pink font color */
+            margin-bottom: 30px; /* Extended bottom margin */
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 1.3em;
+            color: #ff66a2; /* Pink font color */
+            margin-top: 0;
+            margin-bottom: 30px; /* Extended bottom margin */
+            line-height: 1.5;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        button {
+            background: linear-gradient(45deg, #ff66a2, #ffb6c1); /* Pink gradient button */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background: linear-gradient(45deg, #ffb6c1, #ff66a2); /* Lighter pink on hover */
+        }
+
+        .return-button {
+            background: linear-gradient(45deg, #ff66a2, #ffb6c1); /* Pink gradient button */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .return-button:hover {
+            background: linear-gradient(45deg, #ffb6c1, #ff66a2); /* Lighter pink on hover */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sure ka na no?</h1>
+        <p>Yea? orr?? </p>
+
+        <div class="buttons">
+            <button onclick="window.location.href='more_page.html'">No</button>
+            <button onclick="window.location.href='no_page.html'">Yes</button>
+        </div>
+        
+        <button class="return-button" onclick="window.location.href='yoo_page.html'">Return</button>
+    </div>
+</body>
+</html>

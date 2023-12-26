@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(45deg, #ffd6f7, #ffa6c3);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s infinite alternate;
+            color: #333;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        .letter-container {
+            background-color: rgba(255, 182, 193, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+            animation: fadeIn 1s ease-in-out;
+            background-image: url('paper_texture.jpg'); /* Add the path to your paper texture image */
+            background-size: cover;
+            width: 96%; /* Adjusted width to 96% */
+            max-width: 950px; /* Adjusted max-width */
+        }
+
+        .letter-container:hover {
+            background-color: #ffd6f7; /* Lighter pink on hover */
+            transform: scale(1.05);
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #ff66a2; /* Pink font color */
+            margin-bottom: 30px; /* Extended bottom margin */
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 1.3em;
+            color: #ff66a2; /* Pink font color */
+            margin-top: 0;
+            margin-bottom: 30px; /* Extended bottom margin */
+            line-height: 1.5;
+        }
+
+        .go-back-button {
+            background: linear-gradient(45deg, #ff66a2, #ffb6c1); /* Pink gradient button */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .go-back-button:hover {
+            background: linear-gradient(45deg, #ffb6c1, #ff66a2); /* Lighter pink on hover */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="letter-container">
+        <h1>No?? bruhh :< </h1>
+        <p>If ayaw mo then its okay langg I can't force u naman :></p>
+        <p>Feel free to exit out of this na :3 OR</p>
+        <!-- Add your content here -->
+
+        <button class="go-back-button" onclick="window.location.href='more_page.html'">Go Back</button>
+    </div>
+</body>
+</html>
+
